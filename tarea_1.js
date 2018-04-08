@@ -77,3 +77,12 @@ $ mongoimport -d students -c grades < grades.json
 */
 
 // 10. A que estudiante pertenece esta calificación.
+> db.grades.find({"score": 97.56302189646776}).pretty()
+/* Respuesta:
+  {
+  	"_id" : ObjectId("50906d7fa3c412bb040eb58f"),
+  	"student_id" : 6,
+  	"type" : "exam",
+  	"score" : 97.56302189646776
+  }
+*/
